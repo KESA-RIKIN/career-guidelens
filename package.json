@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "innovation-discovery-platform",
   "version": "1.0.0",
@@ -18,3 +19,25 @@
     "concurrently": "^8.2.2"
   }
 }
+=======
+{
+  "name": "innovation-discovery-platform",
+  "version": "1.0.0",
+  "description": "AI-powered self-discovery and innovation guidance platform for students",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["ai", "career-guidance", "innovation", "voice-assessment", "student-platform"],
+  "author": "Innovation Discovery Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+>>>>>>> 64c6a543dda09a594d42ea034e59e12393f214c7
